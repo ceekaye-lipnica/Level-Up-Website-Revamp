@@ -12,6 +12,8 @@
     <body>
         <!-- HEADER SECTION  -->
         <header class="header" id="home">
+
+            <!-- HEADER TOP -->
                 <div class="header-top">
                     <div class="container">
                         <div class="header-top-wrapper">
@@ -22,29 +24,29 @@
 
                                 <div class="header-top-contacts-items">
                                     <div class="header-top-contacts-icon">
-                                        <img src="./assets/header-location.svg" alt="">
+                                        <i class="fa-solid fa-location-arrow"></i>
                                     </div>
                                     <div class="header-top-contacts-text">
                                         <h4>Location</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Quam tortor aliquam porta</p>
+                                        <p>3rd floor HYT Building, 55 Natividad St., San Francisco Del Monte, Quezon City Philippines</p>
                                     </div>
                                 </div>
                                 <div class="header-top-contacts-items">
                                     <div class="header-top-contacts-icon">
-                                        <img src="./assets/header-email.svg" alt="">
+                                        <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="header-top-contacts-text">
                                         <h4>Email</h4>
-                                        <p>Loremipsumdolor@gmail.com</p>
+                                        <p>operations@levelupinternational.net</p>
                                     </div>
                                 </div>
                                 <div class="header-top-contacts-items">
                                     <div class="header-top-contacts-icon">
-                                        <img src="./assets/header-call.svg" alt="">
+                                        <i class="fa-solid fa-phone"></i>
                                     </div>
                                     <div class="header-top-contacts-text">
                                         <h4>Call Us</h4>
-                                        <p>(+63) 912 3456 789</p>
+                                        <p>09178337004 / 09175698234</p>
                                     </div>
                                 </div>
 
@@ -53,21 +55,21 @@
                         </div>
                     </div>
                 </div>
+
+            <!-- HEADER BOTTOM  -->
                 <div class="header-bottom nav">
                     <div class="container">
                         <div class="header-bottom-wrapper">
                             <ul class="header-bottom-nav">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">How It Works</a></li>
                                 <li><a href="#services">Services</a></li>
                                 <li><a href="#contact">Contact Us</a></li>
                             </ul>
-                            <ul class="header-bottom-socials">
-                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                            </ul>
+                            <div class="header-bottom-nav-btn">
+                                <a href="" class="btn orange">Partner With Us</a>
+                            </div>
                         </div>
                         
                     </div>
@@ -81,10 +83,11 @@
                                 <img src="./img/LOGO.png" alt="">
                             </div>
                             <ul class="header-mobile-nav">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">How It Works</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                             </ul>
                             <div class="toggle__menu">
                                 <span></span>
@@ -101,13 +104,17 @@
             <div class="container">
                 <div class="banner__wrapper">
 
-                    <button onclick="topFunction()" id="roll-up" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+                <button onclick="topFunction()" id="roll-up" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
                     
                 <!-- left side contents  -->
                 <div class="banner_left">
                     <div class="banner_left_text">
-                        <div class="banner_left_text_title">Global Solutions, Tailored Manpower.</div>
-                        <div class="banner_left_text_contents">Lorem ipsum dolor sit amet consectetur. Eros diam tristique neque facilisis quam arcu turpis elementum. Lorem ipsum dolor sit amet consectetur. Eros diam tristique neque facilisis quam arcu turpis elementum.</div>
+                        <div class="banner_left_text_title">Global Solutions, <span> Tailored Manpower.</span></div>
+                        <div class="banner_left_text_contents">
+                            <p> 
+                                Level Up Manpower Corporation specializes in recruiting, training, and deploying skilled and talented Filipino workers to international clients. Their services encompass various aspects such as talent sourcing and assessment, training and development programs, as well as managing the deployment process to meet the specific needs of their clients.
+                            </p>
+                        </div>
                     </div>
                     <div class="banner_left_btn">
                         <a class="btn orange" href="#contact">contact us</a>
@@ -115,198 +122,96 @@
                     </div>
                 </div>
 
-                <!-- right side contents  -->
-                <div class="banner_right">
-                    <img src="./img/HYT.png" alt="">
-                </div>
                 </div>
             </div>
         </section>
 
-        <!-- FULL SERVICE SECTION  -->
-        <section class="fullservice" id="about">
-                <div class="fullservice__wrapper">
-                    <div class="fullservice_left">
-                        <img src="./img/about us.png" alt="">
-                    </div>
-                    <div class="fullservice_right">
-                        <div class="fullservice_right_text">
-                            <div class="fullservice_right_title"><h2>Full-Service Legitimate Job Contractor</h2></div>
-                            <div class="fullservice_right_content">
-                                <p>
-                                We specialize in offering innovative manpower solutions to a diverse range of national and international businesses, tailoring our services to meet individual capital requirements. As an international manpower services organization, our focus extends globally, ensuring we provide effective solutions that cater to the unique needs of companies
-                                </p>
-                            </div>
-                        </div>
+        <!-- ABOUT US -->
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us-wrapper">
+                    <h1 class="about-us-title"> ABOUT <span> LEVEL UP MANPOWER CORP </span></h1>
+                    <h2 class="about-us-subtitle">
+                        Level Up Manpower Corporation is a provider of workforce solutions and services. The company specializes in recruiting, training, and deploying skilled and talented Filipino workers to international clients.
+                    </h2>
+                    <div class="about-us-text">
+                        <p>
+                            We specialize in offering innovative manpower solutions to a diverse range of international businesses, tailoring our services to meet individual capital requirements. As an international manpower services organization, our focus extends globally, ensuring we provide efficient  solutions that cater to the unique needs of companies.
+                        </p>
+                        <p>
+                            The company offers workforce recruitment and assessment, training and professional development, workforce consulting, outsourcing, and career management.
+                        </p>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- GOALS SECTION  -->
         <section class="goals">
             <div class="container">
-                <div class="goals__wrapper">
+                <div class="goals-wrapper">
 
-                    <!-- CARD 1  -->
-                    <div class="goals-cards">
-                        <div class="goals-cards-top">
-                            <div class="goals-cards-top-icon">
-                                <img src="./assets/goals.svg" alt="">
-                            </div>
-                            <div class="goals-cards-top-title">goals</div>
+                    <!-- ITEM 1 -->
+                    <div class="goals-card">
+                        <div class="goals-img">
+                            <img src="./img/goal card.png" alt="">
                         </div>
-                        <div class="goals-cards-bottom">
-                            Lorem ipsum dolor sit amet consectetur. Gravida faucibus eget consectetur sed vivamus. Auctor adipiscing viverra sit pharetra cursus nam venenatis ultricies tortor. Placerat duis neque eu sollicitudin id venenatis.
+                        <div class="goals-text">
+                            <h3>OUR GOALS</h3>
+                            <p>
+                                To provide exceptional service, foster long-term partnerships, and create opportunities for growth and development for both workers and market partners.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- CARD 2  -->
-                    <div class="goals-cards">
-                        <div class="goals-cards-top">
-                            <div class="goals-cards-top-icon">
-                                <img src="./assets/vision.svg" alt="">
-                            </div>
-                            <div class="goals-cards-top-title">vision</div>
+                    <!-- ITEM 2 -->
+                    <div class="goals-card vision-card">
+                        <div class="goals-text">
+                            <h3>OUR VISION</h3>
+                            <p>
+                                To be the leading provider of skilled manpower solutions, connecting talented individuals from the Philippines with global market partners, and empowering both individuals and businesses to thrive and succeed.
+                                
+                            </p>
                         </div>
-                        <div class="goals-cards-bottom">
-                            Lorem ipsum dolor sit amet consectetur. Gravida faucibus eget consectetur sed vivamus. Auctor adipiscing viverra sit pharetra cursus nam venenatis ultricies tortor. Placerat duis neque eu sollicitudin id venenatis.
+                        <div class="goals-img vision-img">
+                            <img src="./img/vision card.png" alt="">
                         </div>
                     </div>
 
-                    <!-- CARD 3  -->
-                    <div class="goals-cards">
-                        <div class="goals-cards-top">
-                            <div class="goals-cards-top-icon">
-                                <img src="./assets/mission.svg" alt="">
-                            </div>
-                            <div class="goals-cards-top-title">mission</div>
+                    <!-- ITEM 3 -->
+                    <div class="goals-card">
+                        <div class="goals-img">
+                            <img src="./img/mission card.png" alt="">
                         </div>
-                        <div class="goals-cards-bottom">
-                            Lorem ipsum dolor sit amet consectetur. Gravida faucibus eget consectetur sed vivamus. Auctor adipiscing viverra sit pharetra cursus nam venenatis ultricies tortor. Placerat duis neque eu sollicitudin id venenatis.
+                        <div class="goals-text">
+                            <h3>OUR MISSION</h3>
+                            <p>
+                                To recruit, train, and deploy highly skilled workers from the Philippines to international market partners, ensuring a seamless and efficient process that meets the specific needs of our clients.
+                            </p>
                         </div>
                     </div>
 
                 </div>
             </div>
+
         </section>
 
-        <!-- BRAND LOGO SECTION  -->
+        <!-- BRAND LOGO -->
         <section class="brandlogo">
             <div class="container">
-                <div class="brandlogo__wrapper">
+                <div class="wrapper">
 
-                    <div class="brandlogo_title">brand logo story</div>
-                    <div class="brandlogo_text">
-                        <p>In the dynamic world of international manpower services, there emerged a brand that would redefine the industry. This brand was named "Level Up," a phrase that echoed the essence of progress and advancement. At the heart of the Level Up logo stood a remarkable globe, symbolizing the worldwide reach and impact of the organization. The continents intertwined seamlessly, reflecting the interconnectedness and unity embedded in Level Up's approach to providing manpower solutions across borders. The genesis of the logo unfolded during a brainstorming session where the team envisioned a brand that would not only represent their commitment to excellence but also convey a sense of global collaboration. The globe, adorned with lines reminiscent of latitude and longitude, emphasized precision and attention to detail in their international endeavors.</p>
-
-                        <p>Each curve in the logo told a story of a successful placement, every longitude line represented a partnership forged, and each latitude line echoed the diverse skill sets they brought together. The color blue in the context of international manpower symbolizes trust, professionalism, and a global perspective. Blue is often associated with qualities that resonate well with the dynamic nature of international collaborations and workforce solutions.
-                        </p>
-
-                        <p>The Level Up logo, with its globe emblem, became a symbol of trust for companies seeking international manpower solutions. It signified more than just a service; it represented a bridge connecting talents from different corners of the world to opportunities that awaited them. Level Up is the compass guiding companies to their next level of success, one talent at a time. And so, the logo continued to spin its tale of international collaboration, weaving a narrative of excellence, unity, and boundless possibilities.</p>
+                    <div class="brandlogo-bg-1">
+                        <img src="./img/brand-logo-bg-1.svg" alt="">
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- MEMBER SECTION  -->
-        <section class="member">
-            <div class="container">
-                <div class="member_title">
-                    <h4>expert people</h4>
-                    <h3>our team member</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Neque ornare aliquet nullam gravida. Lorem ipsum dolor sit amet consectetur. </p>
-                </div>
-                <div class="member__wrapper">
-
-                    <!-- CARD 1 -->
-                    <div class="member-cards">
-                        <div class="member-cards-top">
-                            <img src="./img/juandelacruz.png" alt="">
-                        </div>
-                        <div class="member-cards-bottom">
-                            <div class="member-cards-bottom-text">
-                                <h3>Juan Dela Cruz</h3>
-                                <p>Business Manager</p>
-                            </div>
-                            <ul class="member-cards-bottom-socials">
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="brandlogo-img">
+                        <img src="./img/brand-logo-img.svg" alt="">
                     </div>
-
-                    <!-- CARD 2 -->
-                    <div class="member-cards">
-                        <div class="member-cards-top">
-                            <img src="./img/juandelacruz.png" alt="">
-                        </div>
-                        <div class="member-cards-bottom">
-                            <div class="member-cards-bottom-text">
-                                <h3>Juan Dela Cruz</h3>
-                                <p>Business Manager</p>
-                            </div>
-                            <ul class="member-cards-bottom-socials">
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="brandlogo-bg-2">
+                        <img src="./img/brand-logo-bg-2.svg" alt="">
                     </div>
-
-                    <!-- CARD 3 -->
-                    <div class="member-cards">
-                        <div class="member-cards-top">
-                            <img src="./img/juandelacruz.png" alt="">
-                        </div>
-                        <div class="member-cards-bottom">
-                            <div class="member-cards-bottom-text">
-                                <h3>Juan Dela Cruz</h3>
-                                <p>Business Manager</p>
-                            </div>
-                            <ul class="member-cards-bottom-socials">
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CARD 4 -->
-                    <div class="member-cards">
-                        <div class="member-cards-top">
-                            <img src="./img/juandelacruz.png" alt="">
-                        </div>
-                        <div class="member-cards-bottom">
-                            <div class="member-cards-bottom-text">
-                                <h3>Juan Dela Cruz</h3>
-                                <p>Business Manager</p>
-                            </div>
-                            <ul class="member-cards-bottom-socials">
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        
-        <!-- ORG CHART SECTION  -->
-        <section class="orgchart">
-            <div class="container">
-                <h2 class="orgchart-title">Organizational Chart</h2>
-
-                <div class="orgchart__wrapper">
-                    <div class="orgchart-img">
-                        <img src="./img/updated-orgchart.svg" alt="">
+                    <div class="brandlogo-bg-3">
+                        <img src="./img/brand-logo-bg-3.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -392,28 +297,205 @@
             </div>
         </section>
 
-        <!-- CLIENTS SECTION  -->
-        <section class="client">
+        <!-- RECRUIT SECTION -->
+        <section class="recruit">
             <div class="container">
-                <div class="client_title">
-                    <h4>Partnership</h4>
-                    <h3>our clients</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Neque ornare aliquet nullam gravida. Lorem ipsum dolor sit amet consectetur. </p>
-                </div>
-                <div class="client__wrapper">
+                <div class="recruit-wrapper">
+                    <div class="recruit-text">
+                        <h3>Be Part of Our Growing Team!</h3>
+                        <p>Let's match talent with opportunity, one career at a time.</p>
 
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
-                    <div class="client-item"><img src="./img/ford.png" alt=""></div>
+                        <div class="recruit-btn">
+                            <a href="" class="btn orange">Chat With Us</a>
+                        </div>
+                    </div>
+                    <div class="recruit-img">
+                        <img src="./img/recruit-bg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DMW SECTION -->
+        <section class="dmw">
+            <div class="container">
+                <div class="dmw-wrapper">
+
+                    <div class="dwm-1">
+                        <div class="dwm-1-article">
+
+                            <h3>DMW: More demand for OFWs ‘all over Europe’</h3>
+
+                            <div class="dwm-1-article-text">
+                                <p>
+                                    MANILA, Philippines — Several European countries are looking to hire more overseas Filipino workers (OFWs), according to the Department of Migrant Workers (DMW).
+                                </p>
+                                <p>
+                                    “We were told that the demand for OFWs is all over Europe,” Migrant Workers Undersecretary Patricia Yvonne Caunan said in a recent press briefing. 
+                                </p>
+                                <p>
+                                    These countries include the Czech Republic, Austria, Hungary, Finland, Denmark and Portugal.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="dwm-1-photo">
+
+                            <div class="dwm-1-photo-left">
+                                <img src="./img/dwm-1.png" alt="">
+                            </div>
+                            <div class="dwm-1-photo-right">
+                                <div class="dwm-1-photo-right-top">
+                                    <img src="./img/dwm-2.png" alt="">
+                                </div>
+                                <div class="dwm-1-photo-right-bot">
+                                    <img src="./img/dwm-3.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="dwm-2">
+                        <div class="dwm-2-photo">
+                            <img src="./img/dmw-4.png" alt="">
+                        </div>
+                        <div class="dwm-2-article">
+                            <p>
+                                Last year, 2,000 OFWs were deployed to the Czech Republic. This year, 10,500 slots are allotted for Filipino workers, said Caunan. In Hungary, 4,000 OFWs were deployed over a period of 10 years. But last year alone, Hungary received 6,000 OFWs. 
+                            </p>
+                            <p>
+                                Caunan said the DMW would establish bilateral labor agreements and “sustainable” recruitment frameworks with European countries to protect the rights and welfare of OFWs.  According to her, about 10 percent or $3.8 billion of the record high $37 billion in remittances from OFWs last year can be attributed to Europeanbased OFWs. 
+                            </p>
+                            <p>
+                                “Given the engagements we are having, we can see that deployment to Europe definitely will increase. For 2024, we are expecting an increasing trend” in remittances, she said. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="dwm-3">
+                        <div class="dwm-3-article">
+                            <h3>Recruiters, Traffickers</h3>
+
+                            <div class="dwm-3-article-text">
+                                <p> 
+                                    Migrant Workers Officer in charge Hans Cacdac, meanwhile, warned that illegal recruiters and traffickers have taken advantage of the opening of the labor market in Europe to victimize Filipino jobseekers. 
+                                </p>
+                                <p> 
+                                    The DMW has closed six unlicensed recruitment offices in Metro Manila last year and three so far this year for promising non-existent or spurious jobs usually in Europe in exchange for huge sums from prospective OFWs.
+                                </p>
+                                <p> 
+                                    “These illegal recruiters that we have closed usually offer European jobs because that entices the victims, that’s the bait,” said Cacdac.  
+                                </p>
+                                <p> 
+                                    “We really welcome the openness of our European counterparts to talk about enhancing the protection of our OFWs. We welcome the cooperation of our European counterparts to [ensure] safe, ethical, transparent, fair labor mobility,” he added.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dwm-3-photo">
+                            <img src="./img/dmw-5.png" alt="">
+                            <img src="./img/dmw-6.png" alt="">
+                            <img src="./img/dmw-7.png" alt="">
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
         </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="team-wrapper">
+
+                    <h2 class="team-title">Our Team</h2>
+
+                    <div class="team-top">
+                        <h3>Atty. Ernesto P. Tabao</h3>
+                        <h4>General Manager</h4>
+                        <p>
+                            Attorney Ernesto, renowned for his legal expertise, assumed the position of General Manager at Level Up Manpower Corp, a leading provider of international workforce solutions. Transitioning from a distinguished legal career characterized by a steadfast commitment to justice, Attorney Ernesto has demonstrated visionary leadership in guiding Level Up to unprecedented success. 
+                        </p>
+                    </div>
+
+                    <div class="team-down">
+
+                        <div class="team-down-contents">
+
+                            <!-- ITEM 1 -->
+                            <div class="team-card">
+                                <div class="team-card-img"><img src="./img/team-01.png" alt=""></div>
+                                <div class="team-card-text">
+                                    <h4>Jasper T. Aviso</h4>
+                                    <h5>Recruitment Officer</h5>
+                                    <p>
+                                        Mr. Jasper serves as Recruitment Officer at Level Up Manpower Corp., bringing his expertise in talent acquisition and workforce management to the company. His dedication to sourcing and assessing skilled Filipino workers aligns with the organization's commitment to providing innovative manpower solutions for international businesses.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 2 -->
+                            <div class="team-card">
+                                <div class="team-card-img"><img src="./img/team-02.png" alt=""></div>
+                                <div class="team-card-text">
+                                    <h4>Aira Gael  B. Milarpis</h4>
+                                    <h5>Documentation Officer</h5>
+                                    <p>
+                                        Ms. Aira ensures that all processes comply with international standards and regulations. Her meticulous approach to managing documents and maintaining accurate records supports the company's commitment to excellence in providing efficient solutions to clients worldwide.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 3 -->
+                            <div class="team-card">
+                                <div class="team-card-img"><img src="./img/team-03.png" alt=""></div>
+                                <div class="team-card-text">
+                                    <h4>Kristelle Y. Tabao</h4>
+                                    <h5>Welfare Officer</h5>
+                                    <p>
+                                        Ms. Kristelle is dedicated to ensuring the well-being and satisfaction of deployed Filipino workers. Through her compassionate approach and proactive initiatives, she fosters a supportive environment that prioritizes the health, safety, and overall welfare of all employees.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 4 -->
+                            <div class="team-card">
+                                <div class="team-card-img"><img src="./img/team-04.png" alt=""></div>
+                                <div class="team-card-text">
+                                    <h4>Jian Mae B. Librero</h4>
+                                    <h5>Finance and Admin</h5>
+                                    <p>
+                                        Ms. Jian is a proficient Finance and Administration Officer, overseeing the company's financial operations and administrative tasks with precision and efficiency. Her keen eye for detail and strategic financial planning contribute to the organization's stability and ability to offer tailored manpower solutions to international businesses.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM 5 -->
+                            <div class="team-card">
+                                <div class="team-card-img"><img src="./img/team-05.png" alt=""></div>
+                                <div class="team-card-text">
+                                    <h4>Glenmar A. Laguatan</h4>
+                                    <h5>Liason Officer</h5>
+                                    <p>
+                                        Mr. Glenmar is an experienced Liaison Officer at Level Up Manpower Corp., known for his exceptional ability to bridge communication between the company and various stakeholders. His strong relationship-building skills and deep understanding of local and international regulations ensure seamless coordination and compliance in the delivery of manpower services.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="team-down-bg-1"><img src="./img/brand-logo-bg-2.svg" alt=""></div>
+                        <div class="team-down-bg-2"><img src="./img/brand-logo-bg-3.svg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
 
         <!-- CONTACT FORM SECTION  -->
         <section class="contact" id="contact">
@@ -459,7 +541,7 @@
                             </div>
                             <div class="contact_right_details_contents_text">
                                 <h4>Location</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur. In.</p>
+                                <p>3rd floor HYT Building, 55 Natividad St., San Francisco Del Monte, Quezon City Philippines </p>
                             </div>
                         </div>
 
@@ -469,7 +551,7 @@
                             </div>
                             <div class="contact_right_details_contents_text">
                                 <h4>Email</h4>
-                                <p>Loremipsumdolor@gmail.com</p>
+                                <p>operations@levelupinternational.net</p>
                             </div>
                         </div>
 
@@ -479,7 +561,7 @@
                             </div>
                             <div class="contact_right_details_contents_text">
                                 <h4>Contact Number</h4>
-                                <p>(+63) 912 3456 789</p>
+                                <p>09178337004 / 09175698234</p>
                             </div>
                         </div>
 

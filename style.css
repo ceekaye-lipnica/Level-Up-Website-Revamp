@@ -73,7 +73,7 @@ body {
 /* CONTAINER */
 .container{
     padding: 1rem 1.5rem;
-    max-width: 120rem;
+    max-width: 85rem;
     margin: 0 auto;
 }
 
@@ -202,8 +202,14 @@ body {
     }
 
     .header-mobile{
-        background-color: var(--light);
-        position: relative;
+        background-color: var(--primary);
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .header-mobile .container{
+        padding: .5rem 1.5rem;
     }
 
     .header-mobile__wrapper{
@@ -213,31 +219,34 @@ body {
     }
 
     .header-mobile-branding img{
-        width: 10rem;
+        width: 8rem;
     }
 
     .header-mobile-nav{
         position: absolute;
-        background: var(--dark);
+        background: var(--primary);
         list-style: none;
-        /* padding: 1.5rem; */
-        top: 6.9rem;
+        top: 4.5rem;
         max-height: 0;
         overflow: hidden;
         right: 0;
-        width: 70%;
+        width: 100%;
         height: 100vh;
         transition: .5s ease;
     }
 
     .header-mobile-nav.open{
-        max-height: 20rem;
+        max-height: 40rem;
         transition: .5s ease;
     }
 
+    .header-mobile-nav li:first-child{
+        padding-top: 3rem;
+    }
     .header-mobile-nav li{
         margin-bottom: 1.5rem;
         padding-top: 1.5rem;
+        padding-left: 2rem;
         padding-bottom: .5rem;
         border-left: 2px solid transparent;
         transition: .5s ease;
@@ -253,18 +262,25 @@ body {
     .header-mobile-nav li a{
         color: var(--light);
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .header-mobile-nav-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
     }
     
     .toggle__menu span{
         width: 2.5rem;
-        height: .3rem;
+        height: .2rem;
         display: block;
         margin-top: .3rem;
         border-radius: 5rem;
         transition: .5s ease;
-        background-color: var(--primary);
+        background-color: var(--light);
     }
 
     .toggle__menu{
@@ -272,7 +288,7 @@ body {
     }
 
     .toggle__menu.open span:first-child{
-        transform: translate(0, 12px) rotate(225deg);
+        transform: translate(0, 10px) rotate(225deg);
         transition: .5s ease;
     }
 
@@ -780,7 +796,7 @@ html {
 
 /* =========== CLIENTS SECTION =========== */
 .dmw{
-    padding: 3rem;
+    padding: 3rem 0;
     background-color: var(--light);
 }
 
@@ -890,6 +906,74 @@ html {
     align-items: start;
     gap: 3rem;
     margin-top: 5rem;
+}
+
+@media screen and (max-width: 430px) {
+    
+    .dwm-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dwm-1-article h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .dwm-1-article-text p{
+        font-size: 1.1rem;
+    }
+    
+    .dwm-1-photo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dwm-1-photo-left img{
+        width: 22rem;
+    }
+    
+    .dwm-1-photo-right-top img{
+        width: 22rem;
+    }
+    
+    .dwm-1-photo-right-bot img{
+        width: 22rem;
+    }
+    
+    .dwm-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dwm-2-photo img{
+        width: 22rem;
+        height: 18rem;
+    }
+    
+    .dwm-2-article p{
+        font-size: 1.1rem;
+    }
+    
+    .dwm-3-article h3{
+        font-size: 2rem;
+    }
+    
+    .dwm-3-article-text{
+        font-size: 1.1rem;
+    }
+    
+    .dwm-3-photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dwm-3-photo img{
+        width: 22rem;
+    }
 }
 
 
@@ -1010,15 +1094,375 @@ html {
     text-align: justify;
 }
 
+@media screen and (max-width: 430px) {
+    .team-title{
+        font-size: 4rem;
+    }
+    
+    .team-top{
+        height: fit-content;
+    }
+    
+    .team-top h3{
+        font-size: 2rem;
+        padding-top: 0;
+    }
+    
+    .team-top h4{
+        font-size: 1.6rem;
+    }
+    
+    .team-top p{
+        font-size: 1.1rem;
+        text-align: justify;
+        text-indent: 2rem;
+    }
+    
+    .team-down-bg-1 img{
+        display: none;
+    }
+    
+    .team-down-bg-2 img{
+        display: none;
+    }
+    
+    .team-card{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .team-card-text h4{
+        text-align: center;
+    }
+    
+    .team-card-text h5{
+        text-align: center;
+    }
+}
 
 
+/* =========== CONTACT FORM SECTION =========== */
+.carousel{
+    padding: 2rem 0;
+}
+
+.carousel-wrapper{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.carousel-card{
+    position: relative;
+    overflow: hidden;
+    border: 5px solid var(--accent);
+    border-radius: 20px;
+}
+
+.carousel-card img{
+    width: 28rem;
+    height: 18rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    object-fit: fill;
+    transition: .5s ease;
+}
+
+.carousel-card img:hover{
+    scale: 1.15;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#tns1 > .tns-item {
+    font-size: 0;
+}
+
+@media screen and (max-width: 430px){
+    #tns1-iw {
+        margin: 0;
+    }
+}
+
+/* =========== LOGO SECTION =========== */
+.logos{
+    background-color: var(--accent2);
+}
+
+#siomai img, #klassic img, #hyt img{
+    width: 12rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+#lux img, #connector img, #cmart img{
+    width: 15rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+    /* NON STOP SLIDER CSS  */
+
+    .logos-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        animation: 20s slide infinite linear;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    
+        .logos-holder {
+        display: flex;
+        gap: 2rem;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+    }
+    
+        .logos-holder:before,
+        .logos-holder:after {
+        position: absolute;
+        top: 0;
+        content: "";
+        z-index: 2;
+    }
+
+    .logos-holder:before {
+        left: 0;
+    }
+
+    .logos-holder:after {
+        right: 0;
+    }
+    
+    .logos-holder:hover .logos-wrapper{
+        animation-play-state: paused;
+    }
+
+    @media screen and (max-width: 430px) {
+        #siomai img, #klassic img, #hyt img{
+            width: 10rem;
+            height: 5rem;
+            object-fit: cover;
+        }
+        
+        #lux img, #connector img, #cmart img{
+            width: 10rem;
+            height: 5rem;
+            object-fit: contain;
+        }
+    }
 
 
+/* =========== CONTACT FORM SECTION =========== */
+.steps{
+    padding: 3rem 0;
+    background-color: var(--light);
+}
+
+.steps-wrapper{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.steps-img img{
+    width: 40rem;
+}
+
+@media screen and (max-width: 430px) {
+    .steps{
+        padding: 3rem 0;
+        background-color: var(--light);
+    }
+    
+    .steps-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .steps-img img{
+        max-width: 25rem;
+    }
+}
 
 
+/* =========== CONTACT FORM SECTION =========== */
+.proficiency{
+    padding: 2rem 0;
+}
+
+.proficiency-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    column-gap: 5rem;
+    margin-top: 6rem;
+}
+
+.proficiency-title{
+    font-size: 3.5rem;
+    color: var(--primary);
+    text-align: center;
+    line-height: 1.1;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.proficiency-card{
+    background-image: url('./img/proficiency-card-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 35rem;
+    height: 20rem;
+}
+
+.proficiency-card h3{
+    padding: .8rem 1.5rem .8rem 1.5rem;
+    margin: 0  0  0 -2rem;
+    font-size: 2rem;
+    color: var(--light);
+    background-color: var(--primary);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.proficiency-card p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color: var(--accent);
+    margin-left: 2rem; 
+    margin-right: 3rem; 
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 430px) {
+
+    .proficiency-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        column-gap: 0;
+        margin-top: 3rem;
+    }
+    
+    .proficiency-title{
+        font-size: 1.8rem;
+    }
+    
+    .proficiency-card{
+        background-image: url('./img/proficiency-card-bg.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+        width: 20rem;
+        height: 13rem;
+    }
+    
+    .proficiency-card h3{
+        font-size: 1rem;
+        text-align: center;
+        padding: .8rem 1rem .8rem 1rem;
+        margin:  0  auto  0  auto;
+        width: 80%;
+    }
+    
+    .proficiency-card p{
+        font-size: .8rem;
+        text-align: justify;
+        color: var(--accent);
+        margin-left: 1rem; 
+        margin-top: 1rem;
+        margin-right: 2rem; 
+    }
+}
 
 
+/* =========== RECRUIT SECTION =========== */
+.partner{
+    padding: 1rem 0;
+    background-color: var(--primary);
+}
 
+.partner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.partner-text h3{
+    font-size: 4rem;
+    color: var(--light);
+    margin-bottom: 2rem;
+}
+
+.partner-text p{
+    font-size: 1.4rem;
+    color: var(--light);
+    opacity: 70%;
+}
+
+.partner-btn{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 430px) {
+    .partner-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .partner-text h3{
+        font-size: 3rem;
+        text-align: center;
+        color: var(--light);
+        margin-bottom: 2rem;
+    }
+    
+    .partner-text p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .partner-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .partner-img{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .partner-img img{
+        width: 23rem;
+    }
+
+}
 
 
 /* =========== CONTACT FORM SECTION =========== */
@@ -1036,7 +1480,7 @@ html {
 }
 
 .contact_left{
-    background-color: var(--dark);
+    background-color: var(--primary);
     padding: 1.5rem;
     width: 40%;
     display: flex;
@@ -1093,6 +1537,10 @@ html {
     margin-top: 2rem;
 }
 
+.contact_left_btn a{
+    padding: .8rem 8rem .8rem 8rem;
+}
+
 .contact_right{
     background-color: var(--light);
     padding: 1.5rem;
@@ -1113,20 +1561,28 @@ html {
 }
 
 .contact_right_details_contents_icon{
-    background-color: var(--dark);
-    padding: .1rem .6rem;
-    height: 3.5rem;
+    background-color: var(--primary);
+    padding: .8rem .75rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     border-radius: 50%;
 }
 
-.contact_right_details_contents_icon img{
-    width: 2.5rem;
+.contact_right_details_contents_icon i{
+    font-size: 1.5rem;
+    color: var(--light);
 }
 
-.contact_right_details_contents_text h4, p{
+.contact_right_details_contents_text h4{
     margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.contact_right_details_contents_text p{
+    margin: 0;
+    color: var(--dark);
 }
 
 @media screen and (max-width: 430px) {

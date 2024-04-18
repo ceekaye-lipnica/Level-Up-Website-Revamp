@@ -462,6 +462,23 @@ html {
     margin-top: 1rem;
 }
 
+.about-vid{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.about-vid video{
+    width: 1200px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about-vid video:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 430px){
     .about-us{
         padding: 2rem 0;
@@ -479,6 +496,13 @@ html {
     .about-us-subtitle{
         font-size: 1.5rem;
         text-align: left;
+    }
+
+    .about-vid video{
+        width: fit-content;
+        height: 250px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 

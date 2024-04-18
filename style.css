@@ -1149,12 +1149,6 @@ html {
     padding: 2rem 0;
 }
 
-.carousel-wrapper{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
 .carousel-card{
     position: relative;
     overflow: hidden;
@@ -1168,22 +1162,66 @@ html {
     padding-bottom: 0;
     margin-bottom: 0;
     object-fit: fill;
+    scale: 1.25;
     transition: .5s ease;
 }
 
 .carousel-card img:hover{
-    scale: 1.15;
+    scale: 1.05;
     cursor: pointer;
     transition: .5s ease;
 }
 
-#tns1 > .tns-item {
-    font-size: 0;
+ /* NON STOP SLIDER CSS  */
+.carousel-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: 40s slide infinite linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+    .carousel-holder {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+    .carousel-holder:before,
+    .carousel-holder:after {
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 2;
+}
+
+.carousel-holder:before {
+    left: 0;
+}
+
+.carousel-holder:after {
+    right: 0;
+}
+
+.carousel-holder:hover .carousel-wrapper{
+    animation-play-state: paused;
 }
 
 @media screen and (max-width: 430px){
-    #tns1-iw {
-        margin: 0;
+    .carousel-card img{
+        width: 20rem;
+        height: 15rem;
     }
 }
 
@@ -1211,7 +1249,7 @@ html {
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        animation: 20s slide infinite linear;
+        animation: 10s slide infinite linear;
     }
 
     @keyframes slide {

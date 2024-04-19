@@ -1261,22 +1261,34 @@ html {
     background-color: var(--light);
 }
 
-#siomai img, #klassic img, #hyt img, #ebb img {
-    width: 12rem;
+#blue img{
+    width: 15rem;
     height: 5rem;
     object-fit: cover;
 }
 
-#yellow img, #brains img{
+#yellow img, #brains img, #blue img{
     width: 15rem;
-    height: 5rem;
+    height: 7rem;
     object-fit: fill;
 }
 
-#lux img, #connector img, #cmart img{
-    width: 15rem;
+#zcorp img, #kmi img, #pest img, #hyt img, #ebb img{
+    width: 10rem;
+    height: 7rem;
+    object-fit: contain;
+}
+
+#lux img, #connector img, #asap img, #oasis img{
+    width: 10rem;
     height: 5rem;
     object-fit: contain;
+}
+
+#siomai img{
+    width: 10rem;
+    height: 5rem;
+    object-fit: cover;
 }
 
 .logos-card:hover{
@@ -1300,7 +1312,7 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0;
+        gap: 1rem;
         animation: 25s slide infinite linear;
     }
 

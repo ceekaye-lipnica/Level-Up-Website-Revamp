@@ -1261,33 +1261,49 @@ html {
     background-color: var(--light);
 }
 
-#blue img{
-    width: 15rem;
-    height: 5rem;
-    object-fit: cover;
-}
-
-#yellow img, #brains img{
-    width: 15rem;
-    height: 7rem;
+#yellow img, #brains img, #hyt img{
+    width: 20rem;
+    height: 10rem;
     object-fit: fill;
 }
 
-#zcorp img, #kmi img, #pest img, #hyt img, #ebb img{
-    width: 10rem;
-    height: 7rem;
+#hyt img{
+    width: 18rem;
+    height: 10rem;
+    object-fit: fill;
+}
+
+#blue img{
+    width: 20rem;
+    height: 8rem;
+    object-fit: fill;
+}
+
+#kmi img{
+    width: 18rem;
+    height: 10rem;
+    object-fit: contain;
+}
+#zcorp img{
+    width: 14rem;
+    height: 10rem;
     object-fit: contain;
 }
 
 #lux img, #connector img, #asap img, #oasis img{
     width: 10rem;
-    height: 5rem;
+    height: 3rem;
     object-fit: contain;
 }
 
-#siomai img{
-    width: 10rem;
-    height: 5rem;
+#pest img{
+    width: 8rem;
+    height: 3rem;
+    object-fit: cover;
+}
+#siomai img,  #ebb img{
+    width: 8rem;
+    height: 3rem;
     object-fit: cover;
 }
 

@@ -342,7 +342,7 @@ body {
 } 
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 
@@ -822,7 +822,7 @@ html {
 }
 
 
-/* =========== CLIENTS SECTION =========== */
+/* =========== DWM SECTION =========== */
 .dmw{
     padding: 3rem 0;
     background-color: var(--light);
@@ -1172,7 +1172,7 @@ html {
 }
 
 
-/* =========== CONTACT FORM SECTION =========== */
+/* =========== CAROUSEL SECTION =========== */
 .carousel{
     padding: 2rem 0;
 }
@@ -1257,8 +1257,6 @@ html {
 .logos{
     padding: 1.5rem 0;
     background-color: var(--light);
-    /* border-top: 2px dashed var(--dark);
-    border-bottom: 2px solid var(--dark); */
 }
 
 #siomai img, #klassic img, #hyt img, #ebb img {
@@ -1384,9 +1382,10 @@ html {
     }
 
 
-/* =========== CONTACT FORM SECTION =========== */
+/* =========== STEPS SECTION =========== */
 .steps{
-    padding: 3rem 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     background-color: var(--light);
 }
 
@@ -1419,7 +1418,7 @@ html {
 }
 
 
-/* =========== CONTACT FORM SECTION =========== */
+/* =========== PROFICIENCY SECTION =========== */
 .proficiency{
     padding: 2rem 0;
 }
@@ -1518,7 +1517,7 @@ html {
 }
 
 
-/* =========== RECRUIT SECTION =========== */
+/* =========== PARTNER SECTION =========== */
 .partner{
     padding: 1rem 0;
     background-color: var(--primary);

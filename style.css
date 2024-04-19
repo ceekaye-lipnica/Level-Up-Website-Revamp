@@ -474,10 +474,11 @@ html {
 }
 
 .about-vid video{
-    width: fit-content;
+    width: 80rem;
     height: fit-content;
-    /* border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .about-vid video:hover{

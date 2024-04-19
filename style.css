@@ -73,7 +73,7 @@ body {
 /* CONTAINER */
 .container{
     padding: 1rem 1.5rem;
-    max-width: 85rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -98,6 +98,10 @@ body {
     background-color: var(--light);
 }
 
+.header-top .container{
+    padding: 0 1.5rem;
+}
+
 .header-top-wrapper{
     display: flex;
     align-items: center;
@@ -105,7 +109,7 @@ body {
 }
 
 .header-top-branding img{
-    width: 12rem;
+    width: 13.5rem;
 }
 
 .header-top-contacts{
@@ -1251,13 +1255,22 @@ html {
 
 /* =========== LOGO SECTION =========== */
 .logos{
-    background-color: var(--accent2);
+    padding: 1.5rem 0;
+    background-color: var(--light);
+    /* border-top: 2px dashed var(--dark);
+    border-bottom: 2px solid var(--dark); */
 }
 
-#siomai img, #klassic img, #hyt img{
+#siomai img, #klassic img, #hyt img, #ebb img {
     width: 12rem;
     height: 5rem;
     object-fit: cover;
+}
+
+#yellow img, #brains img{
+    width: 15rem;
+    height: 5rem;
+    object-fit: fill;
 }
 
 #lux img, #connector img, #cmart img{
@@ -1266,14 +1279,29 @@ html {
     object-fit: contain;
 }
 
+.logos-card:hover{
+    cursor: pointer;
+}
+
+.logos-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
     /* NON STOP SLIDER CSS  */
 
+    /* First slide animation */
     .logos-wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        animation: 10s slide infinite linear;
+        gap: 0;
+        animation: 25s slide infinite linear;
     }
 
     @keyframes slide {
@@ -1284,8 +1312,30 @@ html {
             transform: translateX(-100%);
         }
     }
-    
-        .logos-holder {
+
+    /* Second slide animation (reversed) */
+    .logos-reverse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        animation: 25s slide-reverse infinite linear;
+    }
+
+    @keyframes slide-reverse {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .holder-reverse{
+        margin-top: 2rem;
+    }
+        
+    .logos-holder{
         display: flex;
         gap: 2rem;
         overflow: hidden;
@@ -1314,10 +1364,16 @@ html {
     }
 
     @media screen and (max-width: 430px) {
-        #siomai img, #klassic img, #hyt img{
+        #siomai img, #klassic img, #hyt img, #ebb img{
             width: 10rem;
             height: 5rem;
             object-fit: cover;
+        }
+
+        #yellow img, #brains img{
+            width: 10rem;
+            height: 5rem;
+            object-fit: fill;
         }
         
         #lux img, #connector img, #cmart img{

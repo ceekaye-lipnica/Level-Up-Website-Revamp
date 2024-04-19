@@ -1316,6 +1316,12 @@ html {
     object-fit: cover;
 }
 
+#tsr img{
+    width: 4rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
 .logos-card:hover{
     cursor: pointer;
 }

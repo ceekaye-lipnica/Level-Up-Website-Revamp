@@ -156,13 +156,13 @@ body {
     background-color: var(--primary);
     position: fixed;
     width: 100%;
-    transition: .10s ease;
+    transition: .10s ease-in;
     z-index: 2;
 }
 
 .header-bottom.top{
     top: 0;
-    transition: .10s ease;
+    transition: .10s ease-in;
 }
 
 .header-bottom-wrapper{
@@ -466,6 +466,7 @@ html {
     margin-top: 1rem;
 }
 
+/* ========= LEVEL UP VID ========= */
 .about-vid{
     display: flex;
     justify-content: center;
@@ -473,10 +474,10 @@ html {
 }
 
 .about-vid video{
-    width: 1200px;
+    width: fit-content;
     height: fit-content;
-    border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 .about-vid video:hover{

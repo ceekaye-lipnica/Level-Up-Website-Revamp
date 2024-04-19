@@ -109,7 +109,7 @@ body {
 }
 
 .header-top-branding img{
-    width: 13.5rem;
+    width: 17rem;
 }
 
 .header-top-contacts{
@@ -1284,10 +1284,17 @@ html {
     height: 10rem;
     object-fit: contain;
 }
+
 #zcorp img{
     width: 14rem;
     height: 10rem;
     object-fit: contain;
+}
+
+#ebb img{
+    width: 14rem;
+    height: 10rem;
+    object-fit: cover;
 }
 
 #lux img, #connector img, #asap img, #oasis img{
@@ -1301,7 +1308,8 @@ html {
     height: 3rem;
     object-fit: cover;
 }
-#siomai img,  #ebb img{
+
+#siomai img{
     width: 8rem;
     height: 3rem;
     object-fit: cover;

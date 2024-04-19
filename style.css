@@ -1267,7 +1267,7 @@ html {
     object-fit: cover;
 }
 
-#yellow img, #brains img, #blue img{
+#yellow img, #brains img{
     width: 15rem;
     height: 7rem;
     object-fit: fill;
